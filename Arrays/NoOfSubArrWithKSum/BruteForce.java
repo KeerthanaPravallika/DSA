@@ -1,5 +1,5 @@
 /* 
-Given an array of integers nums and an integer k, return the total number of continuous subarrays whose sum equals to k.
+560 - Given an array of integers nums and an integer k, return the total number of continuous subarrays whose sum equals to k.
 */
 
 class Solution {

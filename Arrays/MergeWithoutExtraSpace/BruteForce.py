@@ -27,10 +27,7 @@ class Solution:
         p2 = 0      # pointer to second array
         while(p2 < m):
             if arr1[p1] > arr2[p2]:                # inserting element into array 1
-                if p1 == 0:
-                    arr1.insert(0,arr2[p2])
-                else:
-                    arr1.insert(p1,arr2[p2])
+                arr1.insert(p1,arr2[p2])
                 p2 += 1
             else:
                 p1 += 1

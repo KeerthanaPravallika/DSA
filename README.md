@@ -3,6 +3,7 @@
 Topics :
 - Arrays
 - Strings
+- Patterns
 - Linked Lists
 - Stacks
 - Recursion

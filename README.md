@@ -1,7 +1,7 @@
 # Data Structures and Algorithms
 
 Topics :
-- [https://github.com/KeerthanaPravallika/DSA/tree/main/Arrays]Arrays
+- Arrays
 - Strings
 - Patterns
 - Linked Lists

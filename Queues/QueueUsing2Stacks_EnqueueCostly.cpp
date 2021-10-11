@@ -88,6 +88,7 @@ int main()
             if(res != '0')
                 cout<<"Dequeue : "<<obj1.pop()<<endl;
             else
+              cout<<"Queue is empty\n";
             
         }
         else if(ch == 3)

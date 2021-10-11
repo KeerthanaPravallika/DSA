@@ -6,5 +6,6 @@ Topics :
 - Patterns
 - Linked Lists
 - Stacks
+- Queues
 - Recursion
 - Dynamic Programming

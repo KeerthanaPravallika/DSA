@@ -9,3 +9,4 @@ Topics :
 - Queues
 - Recursion
 - Dynamic Programming
+- Trees

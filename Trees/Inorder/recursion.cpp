@@ -1,12 +1,17 @@
-/* 
+/*
 
-Link: https://leetcode.com/problems/binary-tree-preorder-traversal/description/
+Link : https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+Given the root of a binary tree, return the inorder traversal of its nodes' values.
 
-Given the root of a binary tree, return the preorder traversal of its nodes' values.
+ 
+
+Example 1:
 
 Input: root = [1,null,2,3]
 
-Output: [1,2,3]
+Output: [1,3,2]
+
+
 
 */
 
@@ -24,22 +29,20 @@ Output: [1,2,3]
 class Solution {
 public:
 
-    void preorder(TreeNode *root, vector<int> &preorderList)
+    void inorder(TreeNode *root, vector<int> &InOrderList)
     {
         if(root == NULL)
             return;
-        preorderList.push_back(root->val);
-        preorder(root->left, preorderList);
-        preorder(root->right, preorderList);
-
+        inorder(root->left,InOrderList );
+        InOrderList.push_back(root->val);
+        inorder(root->right, InOrderList);
     }
-    vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> inorderTraversal(TreeNode* root) {
+        vector<int> InOrderList;
 
-        vector<int> preorderList;
-        preorder(root, preorderList);
+        inorder(root,InOrderList);
 
-        return preorderList;
-
+        return InOrderList;
         
     }
 };

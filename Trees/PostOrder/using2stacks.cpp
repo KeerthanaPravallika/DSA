@@ -14,6 +14,18 @@ Output: [3,2,1]
 
 */
 
+/*
+
+Will take 2 stacks 
+Initially push root into 1st stack
+and then in iteration , pop that element , push to second stack
+and then insert its left and right elements in stack 1
+continue the iteration , pop the first element , insert into stack 2 and then insert its left and right in stack 1
+
+
+
+*/
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {

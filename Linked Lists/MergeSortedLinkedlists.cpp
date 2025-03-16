@@ -63,3 +63,32 @@ public:
         return res->next;
     }
 };
+
+// 2nd approach
+
+class Solution {
+    public:
+        ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+            ListNode* dummy = new ListNode(0);
+            ListNode* nl = dummy;
+    
+            while(list1 && list2)
+            {
+                if(list1->val > list2->val)
+                {
+                    nl->next = list2;
+                    list2 = list2->next;
+                }
+                else
+                {
+                    nl->next = list1;
+                    list1 = list1->next;
+                }
+                nl = nl->next;
+            }
+    
+            nl->next = list1 ? list1 : list2;
+    
+            return dummy->next;
+        }
+    };

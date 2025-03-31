@@ -36,7 +36,7 @@ public:
     /*
     Inorder means left root right
 
-    So first it will check left side anf=d then when it is null, it will print and check towards right
+    So first it will check left side and then when it is null, it will print and check towards right
     */
         while(true)
         {
